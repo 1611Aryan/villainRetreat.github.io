@@ -1,0 +1,63 @@
+@charset "utf-8";
+/* CSS Document */
+section {
+  height: 89vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  z-index: -1;
+}
+section h1 {
+  font-size: 4rem;
+  color: black;
+}
+#home {
+  position: relative;
+  background: #ED213A;
+  background: -webkit-linear-gradient(to right, #93291E, #ED213A);
+  background: linear-gradient(to right, #93291E, #ED213A);
+}
+#products {
+  background-image: linear-gradient(109.6deg, rgba(255, 219, 47, 1) 11.2%, rgba(244, 253, 0, 1) 100.2%);
+}
+#aboutUs {
+  background-image: linear-gradient(110.1deg, rgba(34, 126, 34, 1) 2.9%, rgba(168, 251, 60, 1) 90.3%);
+}
+#contact {
+  background: #0575E6;
+  background: -webkit-linear-gradient(to right, #021B79, #0575E6);
+  background: linear-gradient(to right, #021B79, #0575E6);
+}
+section div {
+  position: absolute;
+  border-bottom: 30rem solid white;
+  border-right: 0.5rem solid transparent;
+  border-left: 0.5rem solid transparent;
+  z-index: -1;
+  top: 5vh;
+    left:55vw;
+  transform: scale(1.2);
+  transform: rotateZ(-5deg);
+}
+.top::before {
+  content: "";
+  position: absolute;
+  top: 29.9rem;
+  height: 0.7rem;
+  width: 10rem;
+  transform: translateX(-9.5rem);
+  background-color: white;
+  z-index: -2;
+}
+.top::after {
+  content: "";
+  position: absolute;
+  border-bottom: 30rem solid white;
+  border-right: 0.5rem solid transparent;
+  border-left: 0.5rem solid transparent;
+  right: 9rem;
+  transform: rotateX(180deg);
+  top: 29.9rem;
+  z-index: -2;
+}

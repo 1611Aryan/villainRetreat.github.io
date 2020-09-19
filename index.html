@@ -1,0 +1,51 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+<link rel="stylesheet" type="text/css" href="CSS/Nav_and_ScrollBar.css">
+<link rel="stylesheet" type="text/css" href="CSS/main.css">
+</head>
+<script type="text/javascript" src="Jquery/jquery.min.js"></script>
+<body>
+<div id="progressBar"></div>
+<div id="scrollPath"></div>
+<header>
+    <nav>
+        <h1>Villain's Retreat</h1>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#products">Products</a></li>
+            <li><a href="#aboutUs">About Us</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    </header>
+    <main>
+        <section id="home">
+            <div class="top"></div>
+            <h1>Home</h1>
+        </section>
+        <section id="products">
+            <h1>Products</h1>
+        </section>
+        <section id="aboutUs">
+            <h1>About Us</h1>
+        </section>
+        <section id="contact">
+            <h1>Contact</h1>
+        </section>
+    </main>
+
+<script type="text/javascript" src="Java Script/spice.js"></script> 
+<script type="text/javascript">
+         var progress = document.getElementById('progressBar');
+        progress.style.height = 0 + "%";
+var totalHeight = document.body.scrollHeight - window.innerHeight;
+window.onscroll = function(){
+  var progressHeight = (window.pageYOffset / totalHeight) * 100;
+  progress.style.height = progressHeight + "%";
+}
+    </script>
+</body>
+</html>
